@@ -1,1 +1,5 @@
-# computer-vision
+### Computer Vision
+
+- OpenCV 
+- Jupiter Notebook
+- Matplotlib
