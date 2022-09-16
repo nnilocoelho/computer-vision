@@ -13,7 +13,7 @@ size = (frame_width, frame_height)
 
 # Define the codec and create VideoWriter object.
 out_avi = cv2.VideoWriter('../computer-vision/nb03/output.avi',cv2.VideoWriter_fourcc(*'MJPG'), 10, (frame_width,frame_height))
-out_mp4 = cv2.VideoWriter('../computer-vision/nb03/output.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 10.0, (frame_width,frame_height))
+#out_mp4 = cv2.VideoWriter('../computer-vision/nb03/output.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 10.0, (frame_width,frame_height))
 
 while(True):
     ret, frame = cap.read()
@@ -21,7 +21,7 @@ while(True):
     if ret == True:
             # Write the frame to the output files
         out_avi.write(frame)
-        out_mp4.write(frame)
+        #out_mp4.write(frame)
         
         # Display the frame
         # saved in the file
@@ -35,7 +35,7 @@ while(True):
 # When everything done, release the VideoCapture and VideoWriter objects
 cap.release()
 out_avi.release()
-out_mp4.release()
+#out_mp4.release()
 
 # Closes all the frames
 cv2.destroyAllWindows()
