@@ -11,10 +11,6 @@ frame_height = int(cap.get(4))
 
 size = (frame_width, frame_height)
 
-'''result = cv2.VideoWriter('/home/nilo/computer-vision/nb03/output.mp4',
-                         cv2.VideoWriter_fourcc(*'MJPG'),
-                         10, size)'''
-
 # Define the codec and create VideoWriter object.
 out_avi = cv2.VideoWriter('../computer-vision/nb03/output.avi',cv2.VideoWriter_fourcc(*'MJPG'), 10, (frame_width,frame_height))
 out_mp4 = cv2.VideoWriter('../computer-vision/nb03/output.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 10.0, (frame_width,frame_height))
