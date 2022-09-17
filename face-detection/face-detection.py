@@ -24,6 +24,7 @@ with mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence
     # Draw the face detection annotations on the image.
     image.flags.writeable = True
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    
     if results.detections:
       for detection in results.detections:
         mp_drawing.draw_detection(image, detection)
