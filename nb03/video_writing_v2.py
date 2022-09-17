@@ -1,8 +1,5 @@
 # import the library
 import cv2
-import matplotlib.pyplot as plt
-
-
 
 source = 0
 cap = cv2.VideoCapture(source)
